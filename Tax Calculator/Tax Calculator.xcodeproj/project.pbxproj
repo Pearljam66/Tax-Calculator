@@ -14,8 +14,8 @@
 		260722732AF9210600C8751E /* Tax_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260722722AF9210600C8751E /* Tax_CalculatorTests.swift */; };
 		2607227D2AF9210600C8751E /* Tax_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607227C2AF9210600C8751E /* Tax_CalculatorUITests.swift */; };
 		2607227F2AF9210600C8751E /* Tax_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607227E2AF9210600C8751E /* Tax_CalculatorUITestsLaunchTests.swift */; };
-		2607228D2AF938C400C8751E /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607228C2AF938C400C8751E /* PieChartView.swift */; };
 		2607228F2AF9398200C8751E /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607228E2AF9398200C8751E /* ResultsView.swift */; };
+		260722922AF9435C00C8751E /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 260722912AF9435C00C8751E /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		260722782AF9210600C8751E /* Tax CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tax CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2607227C2AF9210600C8751E /* Tax_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tax_CalculatorUITests.swift; sourceTree = "<group>"; };
 		2607227E2AF9210600C8751E /* Tax_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tax_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		2607228C2AF938C400C8751E /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		2607228E2AF9398200C8751E /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260722922AF9435C00C8751E /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				260722632AF9210600C8751E /* ContentView.swift */,
-				2607228C2AF938C400C8751E /* PieChartView.swift */,
 				2607228E2AF9398200C8751E /* ResultsView.swift */,
 			);
 			path = Views;
@@ -157,6 +156,9 @@
 			dependencies = (
 			);
 			name = "Tax Calculator";
+			packageProductDependencies = (
+				260722912AF9435C00C8751E /* SwiftUICharts */,
+			);
 			productName = "Tax Calculator";
 			productReference = 2607225E2AF9210600C8751E /* Tax Calculator.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +231,9 @@
 				Base,
 			);
 			mainGroup = 260722552AF9210600C8751E;
+			packageReferences = (
+				260722902AF9435C00C8751E /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 2607225F2AF9210600C8751E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -271,7 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2607228D2AF938C400C8751E /* PieChartView.swift in Sources */,
 				2607228F2AF9398200C8751E /* ResultsView.swift in Sources */,
 				260722642AF9210600C8751E /* ContentView.swift in Sources */,
 				260722622AF9210600C8751E /* Tax_CalculatorApp.swift in Sources */,
@@ -604,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		260722902AF9435C00C8751E /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = exactVersion;
+				version = "2.0.0-beta.2";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		260722912AF9435C00C8751E /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 260722902AF9435C00C8751E /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 260722562AF9210600C8751E /* Project object */;
 }
