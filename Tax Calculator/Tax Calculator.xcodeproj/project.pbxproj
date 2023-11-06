@@ -14,6 +14,8 @@
 		260722732AF9210600C8751E /* Tax_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260722722AF9210600C8751E /* Tax_CalculatorTests.swift */; };
 		2607227D2AF9210600C8751E /* Tax_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607227C2AF9210600C8751E /* Tax_CalculatorUITests.swift */; };
 		2607227F2AF9210600C8751E /* Tax_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607227E2AF9210600C8751E /* Tax_CalculatorUITestsLaunchTests.swift */; };
+		2607228D2AF938C400C8751E /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607228C2AF938C400C8751E /* PieChartView.swift */; };
+		2607228F2AF9398200C8751E /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607228E2AF9398200C8751E /* ResultsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		260722782AF9210600C8751E /* Tax CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tax CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2607227C2AF9210600C8751E /* Tax_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tax_CalculatorUITests.swift; sourceTree = "<group>"; };
 		2607227E2AF9210600C8751E /* Tax_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tax_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2607228C2AF938C400C8751E /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		2607228E2AF9398200C8751E /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,8 @@
 		260722602AF9210600C8751E /* Tax Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				2607228B2AF938A600C8751E /* Views */,
 				260722612AF9210600C8751E /* Tax_CalculatorApp.swift */,
-				260722632AF9210600C8751E /* ContentView.swift */,
 				260722652AF9210600C8751E /* Assets.xcassets */,
 				260722672AF9210600C8751E /* Preview Content */,
 			);
@@ -125,6 +129,16 @@
 				2607227E2AF9210600C8751E /* Tax_CalculatorUITestsLaunchTests.swift */,
 			);
 			path = "Tax CalculatorUITests";
+			sourceTree = "<group>";
+		};
+		2607228B2AF938A600C8751E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				260722632AF9210600C8751E /* ContentView.swift */,
+				2607228C2AF938C400C8751E /* PieChartView.swift */,
+				2607228E2AF9398200C8751E /* ResultsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2607228D2AF938C400C8751E /* PieChartView.swift in Sources */,
+				2607228F2AF9398200C8751E /* ResultsView.swift in Sources */,
 				260722642AF9210600C8751E /* ContentView.swift in Sources */,
 				260722622AF9210600C8751E /* Tax_CalculatorApp.swift in Sources */,
 			);
