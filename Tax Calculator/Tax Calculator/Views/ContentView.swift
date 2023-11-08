@@ -10,19 +10,22 @@ import SwiftUI
 struct ContentView: View {
     @State private var salary: String = ""
     @State private var isSalaryValid: Bool = false
+
     @Environment(\.colorScheme) var colorScheme
 
     var body: some View {
         NavigationView {
             VStack {
-                Text("Annual Salary")
-                    .padding(.bottom, 75)
+                Text("Annual Salary:")
+                    .padding(.bottom, 25)
+                    .font(.system(size: 30))
 
-                TextField("", text: $salary)
-                    .frame(width: 200)
-                    .border(borderColor, width: 1)
+                TextField("cash money", text: $salary)
+                    .frame(width: 150, height: 30)
+                    .border(borderColor, width: 3)
+                    .cornerRadius(5)
                     .padding(.bottom, 75)
-                    .keyboardType(.numberPad)
+                    .keyboardType(.decimalPad)
 
                 NavigationLink(destination: ResultsView(salary:$salary), isActive: $isSalaryValid, label: {
                     Text("Calculate Tax")

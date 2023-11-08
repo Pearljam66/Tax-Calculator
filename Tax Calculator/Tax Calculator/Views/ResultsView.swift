@@ -14,6 +14,7 @@ struct ResultsView: View {
 
     var body: some View {
         let salaryNumber = Double(salary)!
+
         var incomeTax: Double = 0
         var socialSecurityTax: Double = 0
 
